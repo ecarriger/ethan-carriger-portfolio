@@ -2,6 +2,7 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -10,4 +11,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, a, li {
     font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1260px;
+}
+
+/*** Header ***/
+header {
+    background-color: var(--color-bg-light);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+header .container {
+    display: flex;
+}
+
+
+/*** Tablet styles ***/
+@media (min-width: 641px) {
+    
+    /*** Tablet Header ***/
+    
+}
+
+/*** Desktop styles ***/
+@media (min-width: 1025px) {
+    
+    /*** Mobile Header ***/
+    
 }
