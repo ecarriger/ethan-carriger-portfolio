@@ -40,7 +40,7 @@ header {
 header .container {
     display: flex;
     margin: auto;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 header .brand {
@@ -51,6 +51,10 @@ header .brand {
 }
 header .brand h3 {
     font-family: 'Inter', sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: column;
 }
 nav ul {
     display: none;
@@ -94,6 +98,23 @@ nav button span {
     background-image: inherit;
     height: 1.5rem;
     width: 1.5rem;
+}
+nav.expanded {
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+nav.expanded ul {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+}
+nav.expanded a {
+    color: white;
+}
+nav.expanded button {
+    border: none;
 }
 
 /*** Tablet styles ***/
