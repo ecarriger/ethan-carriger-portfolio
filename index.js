@@ -18,3 +18,12 @@ navButton.addEventListener('click', () => {
 });
 overlay.addEventListener('click', collapseNav);
 navLinks.forEach(link => link.addEventListener('click', collapseNav));
+
+//Remove collapse menu if layout changed to desktop
+const mediaQuery = window.matchMedia('(min-width: 1025px)')
+function handleDesktopChange(e) {
+  if (e.matches) {
+    collapseNav();
+  }
+}
+mediaQuery.addListener(handleDesktopChange)
