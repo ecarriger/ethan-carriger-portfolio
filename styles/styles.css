@@ -4,3 +4,174 @@
     box-sizing: border-box;
     margin: 0;
 }
+body {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inria Serif', serif;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p, a, li, button {
+    font-family: 'Inter', sans-serif;
+}
+button {
+    font-size: 1.25rem;
+}
+
+.container {
+    max-width: 1260px;
+}
+
+/*** Header ***/
+header {
+    background-color: var(--color-bg-light);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+header .container {
+    display: flex;
+    margin: auto;
+    align-items: baseline;
+    justify-content: space-between;
+}
+header .brand {
+    color: var(--color-primary);
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+header .brand h3 {
+    font-family: 'Inter', sans-serif;
+    padding: 1.25rem 0;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1.25rem;
+}
+nav ul {
+    display: none;
+    list-style: none;
+}
+nav li {
+    font-size: 1.25rem;
+}
+nav a:visited {
+    color: var(--color-primary);
+}
+nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+nav a:hover {
+    border-bottom: 3px solid var(--color-primary);
+}
+nav a:active {
+    color: var(--color-secondary-light);
+    border-bottom: 3px solid var(--color-secondary-light);
+}
+nav button {
+    background-color: var(--color-primary);
+    background-image: url('../images/icons/menu_white.svg');
+    background-size: 0%;
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1.25rem 1rem;
+}
+nav button:active {
+    border: 3px solid var(--color-secondary-light);
+}
+nav button span {
+    background-image: inherit;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+nav.expanded {
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+nav.expanded ul {
+    display: flex;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-content: stretch;
+}
+nav.expanded li {
+    padding-bottom: 1.5rem ;
+    border-bottom: 2px solid white;
+}
+nav.expanded a {
+    color: white;
+}
+nav.expanded a:active {
+    border: none;
+    color: var(--color-secondary-light);
+}
+nav.expanded li:has(> a:active) {
+    border-bottom: 2px solid var(--color-secondary-light);
+}
+nav.expanded button {
+    background-image: url('../images/icons/x_white.svg');
+    border: none;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+nav.expanded button:active {
+    background-color: var(--color-primary);
+    background-image: url('../images/icons/x_white.svg');
+}
+#overlay {
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#overlay.visible {
+    display: block;
+}
+
+/*** Main ***/
+
+
+/*** Tablet styles ***/
+@media (min-width: 641px) {
+    
+    /*** Tablet Header ***/
+    
+}
+
+/*** Desktop styles ***/
+@media (min-width: 1025px) {
+    
+    /*** Mobile Header ***/
+    nav, nav.expanded {
+        position: relative;
+    }
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+    nav button {
+        display: none;
+    }
+
+}

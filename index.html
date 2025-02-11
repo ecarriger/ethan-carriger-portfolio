@@ -5,125 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan Carriger's Portfolio</title>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
     <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header>
-        <h2>EC</h2>
-        <h3>Ethan Carriger</h3>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button>Menu<img src="" alt="menu icon" /></button>
+        <div class="container">
+            <span class="brand">
+                <h2>EC</h2>
+                <h3>Ethan Carriger</h3>
+            </span>
+            <nav>
+                <button>Menu<span class="icon icon-menu-white"></span></button>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="hero">
-            <div>
-                <h2>Care</h2>
-                <h2>Create</h2>
-                <h2>Challenge</h2>
-            </div>
-            <div>
-                <h3>Hello, I'm Ethan Carriger, the front-end developer who gives care.</h3>
+        <div id="overlay"></div>
+        <div class="container">
+            <section id="hero">
+                <div>
+                    <h2>Care</h2>
+                    <h2>Create</h2>
+                    <h2>Challenge</h2>
+                </div>
+                <div>
+                    <h3>Hello, I'm Ethan Carriger, the front-end developer who gives care.</h3>
+                    <p>
+                        Let me build your website and you'll be in good hands. From design to development, 
+                        I'll take care of things. Let me know how I can help!
+                    </p>
+                    <button>
+                        <a href="#contact">Contact Me</a>
+                        <img src="" alt="Envelope icon">
+                    </button>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <span>
+                        <img src="" alt="HTML logo">
+                        <p>HTML</p>
+                    </span>
+                    <span>
+                        <img src="" alt="CSS logo">
+                        <p>CSS</p>
+                    </span>
+                    <span>
+                        <img src="" alt="JavaScript logo">
+                        <p>JavaScript</p>
+                    </span>
+                    <span>
+                        <img src="" alt="Figma logo">
+                        <p>UI/UX</p>
+                    </span>
+                    <span>
+                        <img src="" alt="React logo">
+                        <p>React</p>
+                    </span>
+                    <span>
+                        <img src="" alt="WordPress logo">
+                        <p>WordPress</p>
+                    </span>
+                </div>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="" alt="Portrait of Ethan Carriger" />
+                <p>Lorem ipsum dolor sit amet consectetur. Est et dictum cras in tincidunt purus scelerisque vel. Tincidunt enim sociis lorem feugiat sagittis. Curabitur ornare enim consectetur amet pulvinar velit tincidunt amet ut. Urna massa semper nunc congue vitae in. In egestas eget justo sapien vulputate gravida lobortis. Elementum neque aliquam risus urna quam felis turpis iaculis. Elit tortor nec vitae aenean. Sed a commodo purus dis non semper suspendisse in. Egestas nulla tortor egestas risus aliquam gravida congue blandit. Lacinia placerat vulputate eleifend a nunc pretium. Morbi ac amet nunc sapien risus purus nisl tempor. </p>
+                <p>Ut eu nisi neque nullam. Ultrices pellentesque dignissim consectetur urna aliquet amet ut cras aliquam. Velit vitae nisl bibendum integer amet quam metus tortor. Amet vitae elit a arcu feugiat congue. Porttitor eu scelerisque duis purus imperdiet. Sit dolor varius orci donec feugiat. Tellus pellentesque facilisi adipiscing nisl. Aenean commodo at nam quam nisl. Non non felis sapien facilisi scelerisque scelerisque. Nunc morbi ut et sagittis nunc integer sit. Duis mauris enim ullamcorper netus eu. Risus fringilla morbi ullamcorper porta a quis. A facilisis eget arcu ut mi nec.</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects-container"></div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
                 <p>
-                    Let me build your website and you'll be in good hands. From design to development, 
-                    I'll take care of things. Let me know how I can help!
+                    If there is a project or position you think I can help you out with, 
+                    i would love to hear from you. Feel free to reach out using one of the methods below.
                 </p>
-                <button>
-                    <a href="#contact">Contact Me</a>
-                    <img src="" alt="Envelope icon">
-                </button>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <span>
-                    <img src="" alt="HTML logo">
-                    <p>HTML</p>
-                </span>
-                <span>
-                    <img src="" alt="CSS logo">
-                    <p>CSS</p>
-                </span>
-                <span>
-                    <img src="" alt="JavaScript logo">
-                    <p>JavaScript</p>
-                </span>
-                <span>
-                    <img src="" alt="Figma logo">
-                    <p>UI/UX</p>
-                </span>
-                <span>
-                    <img src="" alt="React logo">
-                    <p>React</p>
-                </span>
-                <span>
-                    <img src="" alt="WordPress logo">
-                    <p>WordPress</p>
-                </span>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="" alt="Portrait of Ethan Carriger" />
-            <p>Lorem ipsum dolor sit amet consectetur. Est et dictum cras in tincidunt purus scelerisque vel. Tincidunt enim sociis lorem feugiat sagittis. Curabitur ornare enim consectetur amet pulvinar velit tincidunt amet ut. Urna massa semper nunc congue vitae in. In egestas eget justo sapien vulputate gravida lobortis. Elementum neque aliquam risus urna quam felis turpis iaculis. Elit tortor nec vitae aenean. Sed a commodo purus dis non semper suspendisse in. Egestas nulla tortor egestas risus aliquam gravida congue blandit. Lacinia placerat vulputate eleifend a nunc pretium. Morbi ac amet nunc sapien risus purus nisl tempor. </p>
-            <p>Ut eu nisi neque nullam. Ultrices pellentesque dignissim consectetur urna aliquet amet ut cras aliquam. Velit vitae nisl bibendum integer amet quam metus tortor. Amet vitae elit a arcu feugiat congue. Porttitor eu scelerisque duis purus imperdiet. Sit dolor varius orci donec feugiat. Tellus pellentesque facilisi adipiscing nisl. Aenean commodo at nam quam nisl. Non non felis sapien facilisi scelerisque scelerisque. Nunc morbi ut et sagittis nunc integer sit. Duis mauris enim ullamcorper netus eu. Risus fringilla morbi ullamcorper porta a quis. A facilisis eget arcu ut mi nec.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-container"></div>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                If there is a project or position you think I can help you out with, 
-                i would love to hear from you. Feel free to reach out using one of the methods below.
-            </p>
-            <div class="contact-links">
-                <span>
-                    <img src="" alt="LinkedIn logo" />
-                    <p>LinkedIn</p>
-                </span>
-                <span>
-                    <img src="" alt="Envalope icon">
-                    <p>contact@ethancarriger.com</p>
-                </span>
-            </div>
-            <form>
-                <div>
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name" />
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="last-name" />
+                <div class="contact-links">
+                    <span>
+                        <img src="" alt="LinkedIn logo" />
+                        <p>LinkedIn</p>
+                    </span>
+                    <span>
+                        <img src="" alt="Envalope icon">
+                        <p>contact@ethancarriger.com</p>
+                    </span>
                 </div>
-                <div>
-                    <label for="contact-email">Email</label>
-                    <input type="email" id="contact-email" name="email" />
-                    <label for="contact-phone">Phone</label>
-                    <input type="text" id="contact-phone" name="phone" />
-                </div>
-                <div>
-                    <label for="contact-message"></label>
-                    <textarea id="contact-message" name="message"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Submit" />
-                </div>
-            </form>
+                <form>
+                    <div>
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" />
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" />
+                    </div>
+                    <div>
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" />
+                        <label for="contact-phone">Phone</label>
+                        <input type="text" id="contact-phone" name="phone" />
+                    </div>
+                    <div>
+                        <label for="contact-message"></label>
+                        <textarea id="contact-message" name="message"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
         </section>
+        </div>
     </main>
     <footer>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li>© 2025 Ethan Carriger. All rights reserved.</li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>© 2025 Ethan Carriger. All rights reserved.</li>
+                <li>Icons by <a href="https://lucide.dev" target="_blank" rel="noopener">Lucide Icons</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
