@@ -171,10 +171,10 @@ main .container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: .5rem 1.5rem;
-    justify-content: space-between;
 }
 #values h2 {
     font-size: 3rem;
+    line-height: 4rem;
 }
 #intro {
     display: flex;
@@ -198,6 +198,11 @@ main .container {
 @media (min-width: 641px) {
     
     /*** Tablet Header ***/
+
+    /*** Tablet Hero ***/
+    #intro {
+        max-width: 600px;
+    }
     
 }
 
@@ -226,6 +231,7 @@ main .container {
     }
     #values {
         flex-direction: column;
+        justify-content: space-between;
     }
     #values h2 {
         font-size: 5.5rem;
