@@ -1,4 +1,5 @@
 @import url(globalVars.css);
+@import url(buttons.css);
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -22,9 +23,27 @@ p, a, li, button {
 }
 button {
     font-size: 1.25rem;
+    background-size: 0%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1.25rem 1rem;
 }
-
+a:has(button) {
+    text-decoration: none;
+}
+button a:visited {
+    color:inherit;
+}
+button::after {
+    content: '';
+    background-image: inherit;
+    height: 1.5rem;
+    width: 1.5rem;
+}
 .container {
+    margin: auto;
     max-width: 1260px;
 }
 
@@ -80,25 +99,6 @@ nav a:hover {
 nav a:active {
     color: var(--color-secondary-light);
     border-bottom: 3px solid var(--color-secondary-light);
-}
-nav button {
-    background-color: var(--color-primary);
-    background-image: url('../images/icons/menu_white.svg');
-    background-size: 0%;
-    border-radius: 1rem;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 1.25rem 1rem;
-}
-nav button:active {
-    border: 3px solid var(--color-secondary-light);
-}
-nav button span {
-    background-image: inherit;
-    height: 1.5rem;
-    width: 1.5rem;
 }
 nav.expanded {
     background-color: var(--color-primary);

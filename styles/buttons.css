@@ -1,0 +1,59 @@
+.btn-color-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+.btn-color-primary:active {
+    border: 3px solid var(--color-secondary-light);
+}
+.btn-color-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+.btn-color-secondary:active {
+    border: 3px solid var(--color-primary-light);
+}
+.btn-icon-menu-white {
+    background-image: url('../images/icons/menu_white.svg');
+}
+.btn-icon-menu-black {
+    background-image: url('../images/icons/menu_black.svg');
+}
+.btn-icon-menu-primary {
+    background-image: url('../images/icons/menu_primary.svg');
+}
+.btn-icon-x-white {
+    background-image: url('../images/icons/x_white.svg');
+}
+.btn-icon-x-black {
+    background-image: url('../images/icons/x_black.svg');
+}
+.btn-icon-x-primary {
+    background-image: url('../images/icons/x_primary.svg');
+}
+.btn-icon-mail-white {
+    background-image: url('../images/icons/mail_white.svg');
+}
+.btn-icon-mail-black {
+    background-image: url('../images/icons/mail_black.svg');
+}
+.btn-icon-mail-primary {
+    background-image: url('../images/icons/mail_primary.svg');
+}
+.btn-icon-code-white {
+    background-image: url('../images/icons/code-xml_white.svg');
+}
+.btn-icon-code-black {
+    background-image: url('../images/icons/code-xml_black.svg');
+}
+.btn-icon-code-primary {
+    background-image: url('../images/icons/code-xml_primary.svg');
+}
+.btn-icon-message-white {
+    background-image: url('../images/icons/message-square_white.svg');
+}
+.btn-icon-message-black {
+    background-image: url('../images/icons/message-square_black.svg');
+}
+.btn-icon-message-primary {
+    background-image: url('../images/icons/message-square_primary.svg');
+}
