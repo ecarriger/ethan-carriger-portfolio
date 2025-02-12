@@ -14,7 +14,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 4rem;
+    line-height: 3rem;
 }
 h3 {
     font-size: 1.25rem;
@@ -192,6 +193,18 @@ main .container {
 }
 #intro h3 {
     font-size: 2rem;
+}
+/*** Skills section ***/
+#skills {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+#skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 96px;
 }
 
 /*** Tablet styles ***/
