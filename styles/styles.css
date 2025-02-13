@@ -204,7 +204,20 @@ main .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 96px;
+    gap: 2rem 7rem;
+}
+#skills-container span {
+    flex: 1 1 0;
+    text-align: center;
+}
+#skills-container img {
+    width: 3rem;
+    height: 3rem;
+}
+#skills-container p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: .5rem;
 }
 
 /*** Tablet styles ***/
