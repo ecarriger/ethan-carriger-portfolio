@@ -50,9 +50,12 @@ header .brand {
     align-items: baseline;
     gap: 1rem;
 }
+header .brand h2 {
+    font-size: 2.25rem;
+    line-height: 4rem;
+}
 header .brand h3 {
     font-family: 'Inter', sans-serif;
-    padding: 1.25rem 0;
 }
 nav {
     display: flex;
