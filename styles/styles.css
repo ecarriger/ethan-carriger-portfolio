@@ -201,13 +201,11 @@ main .container {
     gap: 4rem;
 }
 #skills-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem 7rem;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 3rem;
 }
 #skills-container span {
-    flex: 1 1 0;
     text-align: center;
 }
 #skills-container img {
@@ -228,6 +226,10 @@ main .container {
     /*** Tablet Hero ***/
     #intro {
         max-width: 600px;
+    }
+    /*** Tablet Skills ***/
+    #skills-container {
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
     }
     
 }
@@ -261,5 +263,10 @@ main .container {
     }
     #values h2 {
         font-size: 5.5rem;
+    }
+
+    /*** Desktop Skills ***/
+    #skills-container {
+        grid-template: 1fr / repeat(6, 1fr);
     }
 }
