@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     font-size: 3rem;
     line-height: 3rem;
+    margin-bottom: 4rem;
 }
 h3 {
     font-size: 1.25rem;
@@ -198,11 +199,6 @@ main .container {
     font-size: 2rem;
 }
 /*** Skills section ***/
-#skills {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
 #skills-container {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
