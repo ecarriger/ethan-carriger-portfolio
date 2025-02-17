@@ -37,17 +37,20 @@ button {
     gap: 10px;
     padding: 1.25rem 1rem;
 }
+button.btn-icon::after {
+    content: '';
+    background-image: inherit;
+    height: 1.5rem;
+    width: 1.5rem;
+}
 a:has(button) {
     text-decoration: none;
 }
 button a:visited {
     color:inherit;
 }
-button.btn-icon::after {
-    content: '';
-    background-image: inherit;
-    height: 1.5rem;
-    width: 1.5rem;
+a {
+    color: var(--color-primary);
 }
 .container {
     margin: auto;
@@ -264,6 +267,29 @@ main .container {
     gap: 1rem;
 }
 
+/*** Contact Section ***/
+
+.contact-links {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+#linkedin-link img {
+    margin-bottom: .75rem;
+}
+#linkedin-link p {
+    margin-bottom: 0;
+}
+#email-link p {
+    margin-bottom: .75rem;
+}
+.email-icon {
+    vertical-align: bottom;
+    margin-right: 1rem;
+}
+
 /*** Tablet styles ***/
 @media (min-width: 641px) {
     
@@ -330,4 +356,10 @@ main .container {
         flex: 1;
     }
 
+    /*** Desktop Contact ***/
+    .contact-links {
+        align-items: end;
+        flex-direction: row;
+        gap: 3rem;
+    }
 }
