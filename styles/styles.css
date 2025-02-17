@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3rem;
 }
 h3 {
@@ -160,8 +160,8 @@ nav.expanded button:active {
 main .container {
     display: flex;
     flex-direction: column;
-    gap: 72px;
-    padding-top: 72px;
+    gap: 5rem;
+    padding-top: 5rem;
 }
 
 /*** Hero ***/
