@@ -245,6 +245,12 @@ main .container {
     gap: 2rem;
     padding: 1.5rem;
 }
+.project > * {
+    flex: 1 1;
+}
+.project img {
+    width: 100%;
+}
 .project-description {
     display: flex;
     flex-direction: column;
@@ -290,6 +296,23 @@ main .container {
 .email-icon {
     vertical-align: bottom;
     margin-right: 1rem;
+}
+
+/*** Footer ***/
+
+footer {
+    background-color: var(--color-bodytext);
+}
+footer ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+    list-style: none;
+}
+footer a {
+    color: white;
 }
 
 /*** Tablet styles ***/
@@ -355,11 +378,19 @@ main .container {
         flex-direction: row-reverse;
     }
     .project > * {
-        flex: 1;
+        flex: 1 1;
     }
 
     /*** Desktop Contact ***/
     #contact-wrapper {
         width: 50%;
+    }
+
+    /*** Desktop Footer ***/
+    footer ul {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 5rem 0;
     }
 }
