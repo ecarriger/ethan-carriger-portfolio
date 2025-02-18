@@ -171,6 +171,7 @@ main .container {
     flex-direction: column;
     gap: 5rem;
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 /*** Hero ***/
@@ -268,21 +269,22 @@ main .container {
 }
 
 /*** Contact Section ***/
-
+#contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .contact-links {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 0;
+    gap: 3rem;
 }
-#linkedin-link img {
+.contact-links img {
+    height: 3rem;
     margin-bottom: .75rem;
 }
-#linkedin-link p {
-    margin-bottom: 0;
-}
-#email-link p {
+.contact-links p {
     margin-bottom: .75rem;
 }
 .email-icon {
@@ -357,9 +359,7 @@ main .container {
     }
 
     /*** Desktop Contact ***/
-    .contact-links {
-        align-items: end;
-        flex-direction: row;
-        gap: 3rem;
+    #contact-wrapper {
+        width: 50%;
     }
 }
