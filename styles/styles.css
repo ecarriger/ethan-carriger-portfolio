@@ -234,15 +234,14 @@ main .container {
 
 /*** Projects Section ***/
 #projects-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid: auto-flow / 1fr;
     gap: 3rem;
 }
 .project {
     background-color: var(--color-bg-light-offset);
     border-radius: 1.5rem;
     padding: 1.5rem;
-    width: 50%;
 }
 .project-container {
     display: flex;
@@ -381,8 +380,7 @@ footer a {
 
     /*** Desktop Projects ***/
     #projects-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        grid: 1fr 1fr / auto-flow;
     }
 
     /*** Desktop Contact ***/
