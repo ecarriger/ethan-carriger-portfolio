@@ -21,6 +21,7 @@ h2 {
 h3 {
     font-size: 2rem;
     line-height: 3rem;
+    margin-bottom: 2rem;
 }
 p, a, li, button {
     font-family: 'Inter', sans-serif;
@@ -240,15 +241,19 @@ main .container {
 .project {
     background-color: var(--color-bg-light-offset);
     border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 50%;
+}
+.project-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1.5rem;
 }
-.project > * {
+.project-container > * {
     flex: 1 1;
+    min-width: 0;
 }
-.project img {
+.project-img {
     width: 100%;
 }
 .project-description {
@@ -259,6 +264,7 @@ main .container {
 .skill-tag-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 .skill-tag {
@@ -374,11 +380,9 @@ footer a {
     }
 
     /*** Desktop Projects ***/
-    .project {
-        flex-direction: row-reverse;
-    }
-    .project > * {
-        flex: 1 1;
+    #projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     /*** Desktop Contact ***/
