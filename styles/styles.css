@@ -380,7 +380,7 @@ footer a {
 
     /*** Desktop Projects ***/
     #projects-container {
-        grid: 1fr 1fr / auto-flow;
+        grid:  auto-flow / 1fr 1fr;
     }
 
     /*** Desktop Contact ***/
