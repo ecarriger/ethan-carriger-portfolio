@@ -12,48 +12,51 @@
 .btn-color-secondary:active {
     border: 3px solid var(--color-primary-light);
 }
-.btn-icon-menu-white {
+.icon-menu-white {
     background-image: url('../images/icons/menu_white.svg');
 }
-.btn-icon-menu-black {
+.icon-menu-black {
     background-image: url('../images/icons/menu_black.svg');
 }
-.btn-icon-menu-primary {
+.icon-menu-primary {
     background-image: url('../images/icons/menu_primary.svg');
 }
-.btn-icon-x-white {
+.icon-x-white {
     background-image: url('../images/icons/x_white.svg');
 }
-.btn-icon-x-black {
+.icon-x-black {
     background-image: url('../images/icons/x_black.svg');
 }
-.btn-icon-x-primary {
+.icon-x-primary {
     background-image: url('../images/icons/x_primary.svg');
 }
-.btn-icon-mail-white {
+.icon-mail-white {
     background-image: url('../images/icons/mail_white.svg');
 }
-.btn-icon-mail-black {
+.icon-mail-black {
     background-image: url('../images/icons/mail_black.svg');
 }
-.btn-icon-mail-primary {
+.icon-mail-primary {
     background-image: url('../images/icons/mail_primary.svg');
 }
-.btn-icon-code-white {
+.icon-code-white {
     background-image: url('../images/icons/code-xml_white.svg');
 }
-.btn-icon-code-black {
+.icon-code-black {
     background-image: url('../images/icons/code-xml_black.svg');
 }
-.btn-icon-code-primary {
+.icon-code-primary {
     background-image: url('../images/icons/code-xml_primary.svg');
 }
-.btn-icon-message-white {
+.icon-message-white {
     background-image: url('../images/icons/message-square_white.svg');
 }
-.btn-icon-message-black {
+.icon-message-black {
     background-image: url('../images/icons/message-square_black.svg');
 }
-.btn-icon-message-primary {
+.icon-message-primary {
     background-image: url('../images/icons/message-square_primary.svg');
+}
+.icon-linkedin-white {
+    background-image: url('../images/in-white-26-@2x.png');
 }
