@@ -27,6 +27,7 @@ p, a, li, button {
     font-family: 'Inter', sans-serif;
 }
 p {
+    line-height: 1.75rem;
     margin-bottom: 1rem;
 }
 button {
@@ -171,7 +172,7 @@ main .container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
 }
 
@@ -190,11 +191,12 @@ main .container {
 #values h2 {
     font-size: 3rem;
     line-height: 4rem;
+    margin-bottom: 0;
 }
 #intro {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: space-between;
 }
 #intro-text {
@@ -207,6 +209,7 @@ main .container {
 }
 #intro h3 {
     font-size: 2rem;
+    margin-bottom: 0;
 }
 /*** Skills section ***/
 #skills-container {
@@ -382,7 +385,7 @@ footer a {
 
     /*** Desktop Projects ***/
     #projects-container {
-        grid: 1fr 1fr / auto-flow;
+        grid:  auto-flow / 1fr 1fr;
     }
 
     /*** Desktop Contact ***/
