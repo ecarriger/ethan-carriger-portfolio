@@ -233,7 +233,16 @@ main .container {
 }
 
 /*** About Section ***/
-#about .portrait {
+#about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#about-wrapper .portrait {
+    background-image: url(../images/ec_portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
     width: 100%;
 }
 
@@ -378,11 +387,17 @@ footer a {
     }
 
     /*** Desktop About ***/
-    #about .portrait {
-        float: right;
-        width: 50%;
-        padding: 0 0 1rem 1rem;
-        margin: 0 0 1rem 1rem;
+    #about-wrapper {
+        flex-direction: row-reverse;
+    }
+    #about-wrapper .about-copy {
+        flex: 2;
+        min-width: 0;
+    }
+    #about-wrapper .portrait {
+        flex: 1;
+        min-width: 0;
+        height: 24rem;
     }
 
     /*** Desktop Projects ***/
