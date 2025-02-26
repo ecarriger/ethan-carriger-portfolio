@@ -303,11 +303,10 @@ main .container {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 }
 .contact-links img {
-    height: 3rem;
-    margin-bottom: .75rem;
+    height: 4rem;
 }
 .contact-links p {
     margin-bottom: .75rem;
@@ -407,7 +406,7 @@ footer a {
 
     /*** Desktop Contact ***/
     #contact-wrapper {
-        width: 50%;
+        width: 60%;
     }
     .contact-links {
         flex-direction: row;
