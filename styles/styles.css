@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 16px;
 }
@@ -34,6 +37,7 @@ button {
     font-size: 1.25rem;
     background-size: 0%;
     border-radius: 1rem;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -81,6 +85,7 @@ header .brand {
     display: flex;
     align-items: baseline;
     gap: 1rem;
+    text-decoration: none;
 }
 header .brand h2 {
     font-size: 2.25rem;
@@ -89,7 +94,7 @@ header .brand h2 {
 }
 header .brand h1 {
     font-family: 'Inria serif', serif;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 nav {
     display: flex;
@@ -172,8 +177,11 @@ main .container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+section {
+    scroll-margin-top: 10rem;
 }
 
 /*** Hero ***/
@@ -189,6 +197,7 @@ main .container {
     gap: .5rem 1.5rem;
 }
 #values h2 {
+    color: var(--color-primary);
     font-size: 3rem;
     line-height: 4rem;
     margin-bottom: 0;
@@ -231,7 +240,16 @@ main .container {
 }
 
 /*** About Section ***/
-#about .portrait {
+#about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#about-wrapper .portrait {
+    background-image: url(../images/ec_portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
     width: 100%;
 }
 
@@ -292,11 +310,10 @@ main .container {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 }
 .contact-links img {
-    height: 3rem;
-    margin-bottom: .75rem;
+    height: 4rem;
 }
 .contact-links p {
     margin-bottom: .75rem;
@@ -309,7 +326,7 @@ main .container {
 /*** Footer ***/
 
 footer {
-    background-color: var(--color-bodytext);
+    background-color: var(--color-primary);
 }
 footer ul {
     color: white;
@@ -376,11 +393,17 @@ footer a {
     }
 
     /*** Desktop About ***/
-    #about .portrait {
-        float: right;
-        width: 50%;
-        padding: 0 0 1rem 1rem;
-        margin: 0 0 1rem 1rem;
+    #about-wrapper {
+        flex-direction: row-reverse;
+    }
+    #about-wrapper .about-copy {
+        flex: 2;
+        min-width: 0;
+    }
+    #about-wrapper .portrait {
+        flex: 1;
+        min-width: 0;
+        height: 24rem;
     }
 
     /*** Desktop Projects ***/
@@ -390,7 +413,10 @@ footer a {
 
     /*** Desktop Contact ***/
     #contact-wrapper {
-        width: 50%;
+        width: 60%;
+    }
+    .contact-links {
+        flex-direction: row;
     }
 
     /*** Desktop Footer ***/
