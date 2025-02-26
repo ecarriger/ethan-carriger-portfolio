@@ -5,6 +5,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 16px;
 }
@@ -82,6 +85,7 @@ header .brand {
     display: flex;
     align-items: baseline;
     gap: 1rem;
+    text-decoration: none;
 }
 header .brand h2 {
     font-size: 2.25rem;
@@ -175,6 +179,9 @@ main .container {
     gap: 5rem;
     padding-top: 5rem;
     padding-bottom: 7rem;
+}
+section {
+    scroll-margin-top: 10rem;
 }
 
 /*** Hero ***/
