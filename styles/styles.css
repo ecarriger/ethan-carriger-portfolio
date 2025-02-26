@@ -320,7 +320,7 @@ main .container {
 /*** Footer ***/
 
 footer {
-    background-color: var(--color-bodytext);
+    background-color: var(--color-primary);
 }
 footer ul {
     color: white;
