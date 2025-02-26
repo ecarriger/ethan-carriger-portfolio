@@ -174,7 +174,7 @@ main .container {
     flex-direction: column;
     gap: 5rem;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
 }
 
 /*** Hero ***/
@@ -408,6 +408,9 @@ footer a {
     /*** Desktop Contact ***/
     #contact-wrapper {
         width: 50%;
+    }
+    .contact-links {
+        flex-direction: row;
     }
 
     /*** Desktop Footer ***/
