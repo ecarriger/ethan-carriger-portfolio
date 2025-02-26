@@ -350,7 +350,7 @@ footer a {
         max-width: 600px;
     }
     /*** Tablet Skills ***/
-    #skill-container {
+    #skills-container {
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
     }
     
