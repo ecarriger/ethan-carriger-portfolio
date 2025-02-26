@@ -173,7 +173,7 @@ main .container {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
