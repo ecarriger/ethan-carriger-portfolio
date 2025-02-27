@@ -158,6 +158,29 @@ nav.expanded button:active {
     background-color: var(--color-primary);
     background-image: url('../images/icons/x_white.svg');
 }
+#socials {
+    position: fixed;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: .5rem;
+    bottom: 2rem;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: .5rem;
+}
+#socials a.social:hover {
+    border-bottom: none;
+}
+#socials a.social:active {
+    border-bottom: none;
+}
+#socials a.social:visited {
+    border-bottom: none;
+}
+.social img {
+    height: 1.75rem;
+}
 #overlay {
     background-color: rgba(0, 0, 0, .5);
     display: none;
@@ -194,7 +217,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: .5rem 1.5rem;
+    gap: 2.5rem 1.5rem;
 }
 #values h2 {
     color: var(--color-primary);
@@ -343,15 +366,22 @@ footer a {
 /*** Tablet styles ***/
 @media (min-width: 641px) {
     
-    /*** Tablet Header ***/
-
     /*** Tablet Hero ***/
     #intro {
         max-width: 600px;
     }
+
     /*** Tablet Skills ***/
-    #skill-container {
+    #about-wrapper {
+        align-items: center;
+    }
+    #skills-container {
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    /*** Tablet About ***/
+    #about-wrapper .portrait {
+        max-width: 640px;
     }
     
 }
@@ -362,6 +392,9 @@ footer a {
     /*** Desktop Header ***/
     nav, nav.expanded {
         position: relative;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
     }
     nav ul {
         display: flex;
@@ -369,6 +402,13 @@ footer a {
     }
     nav button {
         display: none;
+    }
+    #socials {
+        position: static;
+        flex-direction: row;
+    }
+    .social img {
+        height: 1.5rem;
     }
 
     /*** Desktop Main ***/
