@@ -36,6 +36,7 @@ p {
 button {
     font-size: 1.25rem;
     background-size: 0%;
+    border: 3px solid var(--color-primary-light);
     border-radius: 1rem;
     cursor: pointer;
     display: flex;
@@ -180,6 +181,9 @@ nav.expanded button:active {
 }
 .social img {
     height: 1.75rem;
+}
+nav.expanded #socials {
+    display: none;
 }
 #overlay {
     background-color: rgba(0, 0, 0, .5);
