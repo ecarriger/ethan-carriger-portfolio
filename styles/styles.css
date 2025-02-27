@@ -366,15 +366,22 @@ footer a {
 /*** Tablet styles ***/
 @media (min-width: 641px) {
     
-    /*** Tablet Header ***/
-
     /*** Tablet Hero ***/
     #intro {
         max-width: 600px;
     }
+
     /*** Tablet Skills ***/
+    #about-wrapper {
+        align-items: center;
+    }
     #skills-container {
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    /*** Tablet About ***/
+    #about-wrapper .portrait {
+        max-width: 640px;
     }
     
 }
