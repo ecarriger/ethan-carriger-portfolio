@@ -182,6 +182,9 @@ nav.expanded button:active {
 .social img {
     height: 1.75rem;
 }
+nav.expanded #socials {
+    display: none;
+}
 #overlay {
     background-color: rgba(0, 0, 0, .5);
     display: none;
