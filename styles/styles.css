@@ -122,8 +122,8 @@ nav a:hover {
     border-bottom: 3px solid var(--color-primary);
 }
 nav a:active {
-    color: var(--color-secondary-light);
-    border-bottom: 3px solid var(--color-secondary-light);
+    color: var(--color-secondary);
+    border-bottom: 3px solid var(--color-secondary);
 }
 nav.expanded {
     background-color: var(--color-primary);
@@ -145,10 +145,10 @@ nav.expanded a {
 }
 nav.expanded a:active {
     border: none;
-    color: var(--color-secondary-light);
+    color: var(--color-secondary);
 }
 nav.expanded li:has(> a:active) {
-    border-bottom: 2px solid var(--color-secondary-light);
+    border-bottom: 2px solid var(--color-secondary);
 }
 nav.expanded button {
     background-image: url('../images/icons/x_white.svg');
