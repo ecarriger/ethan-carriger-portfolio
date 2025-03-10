@@ -13,11 +13,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: var(--color-bodytext);
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 3rem;
     margin-bottom: 4rem;
 }
